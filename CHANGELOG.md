@@ -33,6 +33,7 @@
 
 FBAudienceNetwork `6.22.0` 대응
 어댑터 버전 `6.22.0.0`
+APSSPSDK `3.4.0` 이상
 
 2026-10-15
 
@@ -40,6 +41,7 @@ FBAudienceNetwork `6.22.0` 대응
 
 FBAudienceNetwork `6.22.0` 대응
 어댑터 버전 `6.22.0.0`
+APSSPSDK `3.4.0` 이상
 
 2026-07-29
 
@@ -47,6 +49,7 @@ FBAudienceNetwork `6.22.0` 대응
 
 FBAudienceNetwork `6.21.1` 대응
 어댑터 버전 `6.21.1.0`
+APSSPSDK `3.4.0` 이상
 
 2026-10-15
 
@@ -54,6 +57,7 @@ FBAudienceNetwork `6.21.1` 대응
 
 FBAudienceNetwork `6.21.1` 대응
 어댑터 버전 `6.21.1.0`
+APSSPSDK `3.4.0` 이상
 
 2026-02-25
 
@@ -61,6 +65,7 @@ FBAudienceNetwork `6.21.1` 대응
 
 FBAudienceNetwork `6.21.0` 대응
 어댑터 버전 `6.21.0.0`
+APSSPSDK `3.4.0` 이상
 
 2026-10-15
 
@@ -68,5 +73,6 @@ FBAudienceNetwork `6.21.0` 대응
 
 FBAudienceNetwork `6.21.0` 대응 · SPM 개별 배포 시작
 어댑터 버전 `6.21.0.0`
+APSSPSDK `3.4.0` 이상
 
 2026-01-20
