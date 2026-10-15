@@ -11,12 +11,16 @@ import APSSPSDK
 
 
 final public class FBAudienceNetworkRewardVideoAdapter: APSSPRewardVideoAdapterInappBiddingProtocol {
-    public var rootViewController: UIViewController?
+    public weak var rootViewController: UIViewController?
 
     private var rewardVideoAd: FBAudienceNetworkMediationRewardVideoAd?
     
-    public var delegate: APSSPRewardVideoAdapterDelegate?
+    public weak var delegate: APSSPRewardVideoAdapterDelegate?
     
+    deinit {
+        APLogger.debug("FBAudienceNetworkRewardVideoAdapter deinit")
+    }
+
     public init(placementDic: [String: String], rootViewController: UIViewController?, info: [String : Any?]) {
         let placementId = placementDic[APSSPPlacementKey.fbPlacementId.rawValue] ?? ""
         rewardVideoAd = FBAudienceNetworkMediationRewardVideoAd(placementId: placementId,

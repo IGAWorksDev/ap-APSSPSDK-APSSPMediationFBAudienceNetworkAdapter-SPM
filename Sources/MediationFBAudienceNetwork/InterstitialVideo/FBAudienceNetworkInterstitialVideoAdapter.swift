@@ -14,10 +14,14 @@ final public class FBAudienceNetworkInterstitialVideoAdapter: APSSPInterstitialV
    
     private var interstitialVideoAd: FBAudienceNetworkMediationInterstitialVideoAd?
     
-    public var delegate: APSSPInterstitialVideoAdapterDelegate?
+    public weak var delegate: APSSPInterstitialVideoAdapterDelegate?
     
-    public var rootViewController: UIViewController?
+    public weak var rootViewController: UIViewController?
     
+    deinit {
+        APLogger.debug("FBAudienceNetworkInterstitialVideoAdapter deinit")
+    }
+
     public init(placementDic: [String: String], rootViewController: UIViewController?, info: [String : Any?]) {
         let placementId = placementDic[APSSPPlacementKey.fbPlacementId.rawValue] ?? ""
         interstitialVideoAd = FBAudienceNetworkMediationInterstitialVideoAd(placementId: placementId)

@@ -54,7 +54,7 @@ final class FBAudienceNetworkMediationNativeAdView: UIView {
     
     private let placementId: String
     
-    private let rootViewController: UIViewController?
+    private weak var rootViewController: UIViewController?
     
     
     init(placementId: String, biddingData: String, rootViewController: UIViewController?, render: AnyObject?, isNativeBanner: Bool?) {

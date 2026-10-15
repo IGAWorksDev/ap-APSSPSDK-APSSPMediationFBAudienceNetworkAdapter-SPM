@@ -13,7 +13,7 @@ import FBAudienceNetwork
 
 final class FBAudienceNetworkMediationInterstitialAd: NSObject {
     
-    var delegate: APSSPInterstitialAdapterDelegate?
+    weak var delegate: APSSPInterstitialAdapterDelegate?
     
     private var interstitial: FBInterstitialAd?
     

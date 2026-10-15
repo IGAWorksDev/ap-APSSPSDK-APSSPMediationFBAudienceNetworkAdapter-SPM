@@ -13,13 +13,13 @@ import FBAudienceNetwork
 
 final class FBAudienceNetworkMediationRewardVideoAd: NSObject {
     
-    var delegate: APSSPRewardVideoAdapterDelegate?
+    weak var delegate: APSSPRewardVideoAdapterDelegate?
     
     private var rewardedVideoAd: FBRewardedVideoAd?
     
     private let placementId: String
     
-    private let rootViewController: UIViewController?
+    private weak var rootViewController: UIViewController?
     
     private var biddingData: String?
     

@@ -19,7 +19,7 @@ final class FBAudienceNetworkMediationBannerView: UIView {
     
     private var bannerView: FBAdView?
     
-    private var rootviewController: UIViewController?
+    private weak var rootviewController: UIViewController?
     
     private var bannerType: APSSPBannerSize
     

@@ -12,13 +12,17 @@ import APSSPSDK
 
 final public class FBAudienceNetworkInterstitialAdapter: APSSPInterstitialAdapterInappBiddingProtocol {
 
-    public var rootViewController: UIViewController?
+    public weak var rootViewController: UIViewController?
     
-    public var delegate: APSSPInterstitialAdapterDelegate?
+    public weak var delegate: APSSPInterstitialAdapterDelegate?
     
     private var interstitialAd: FBAudienceNetworkMediationInterstitialAd?
 
     
+    deinit {
+        APLogger.debug("FBAudienceNetworkInterstitialAdapter deinit")
+    }
+
     public init(placementDic: [String: String], rootViewController: UIViewController?, info: [String : Any?]) {
         let placementId = placementDic[APSSPPlacementKey.fbPlacementId.rawValue] ?? ""
         interstitialAd = FBAudienceNetworkMediationInterstitialAd(placementId: placementId)
