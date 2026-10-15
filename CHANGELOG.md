@@ -22,12 +22,19 @@
 
 ```swift
 .package(url: "https://github.com/IGAWorksDev/ap-APSSPSDK-APSSPMediationFBAudienceNetworkAdapter-SPM.git",
-         exact: "6220000.0.0")
+         exact: "6220000.0.1")
 ```
 
 > `Other Linker Flags` 에 **`-ObjC`** 추가 필수. 미설정 시 어댑터가 런타임에 인식되지 않습니다.
 
 ---
+
+## 6220000.0.1
+
+FBAudienceNetwork `6.22.0` 대응
+어댑터 버전 `6.22.0.0`
+
+2026-10-15
 
 ## 6220000.0.0
 
@@ -36,12 +43,26 @@ FBAudienceNetwork `6.22.0` 대응
 
 2026-07-29
 
+## 6210100.0.1
+
+FBAudienceNetwork `6.21.1` 대응
+어댑터 버전 `6.21.1.0`
+
+2026-10-15
+
 ## 6210100.0.0
 
 FBAudienceNetwork `6.21.1` 대응
 어댑터 버전 `6.21.1.0`
 
 2026-02-25
+
+## 6210000.0.1
+
+FBAudienceNetwork `6.21.0` 대응
+어댑터 버전 `6.21.0.0`
+
+2026-10-15
 
 ## 6210000.0.0
 
